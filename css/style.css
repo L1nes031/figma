@@ -1,0 +1,433 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #21243d;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+header {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* ===== HOME ===== */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    padding: 50px 10%;
+    min-height: 260px;
+    position: relative;
+}
+
+.home h1 {
+    font-size: 26px;
+}
+
+.home p {
+    max-width: 440px;
+    margin-bottom: 20px;
+}
+
+.home-button {
+    margin-top: 15px;
+}
+
+.home-button button {
+    background-color: #ff6464;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.home-button button:hover {
+    background-color: #e65050;
+}
+
+.home-foto {
+    flex-shrink: 0;
+    border: 3px solid #8170a9;
+    padding: 3px;
+}
+
+.home-foto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* ===== FORMAÇÃO ===== */
+.formacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 25px 10%;
+    background-color: #edf7fa;
+}
+
+.formacao > h2 {
+    flex-basis: 100%;
+    margin-bottom: 0;
+}
+
+.markin-formacao,
+.Creating-formacao {
+    flex: 1 1 220px;
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.markin-formacao h3,
+.Creating-formacao h3 {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.formacao p {
+    margin-bottom: 10px;
+}
+
+.formacao p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== EXPERIÊNCIAS ===== */
+.experiencias {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10%;
+}
+
+.designing-dashboards,
+.Vibrant-Portraits-of-2020 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.Vibrant-Portraits-of-2020 {
+    border-bottom: none;
+}
+
+.designing-dashboards img,
+.Vibrant-Portraits-of-2020 img {
+    width: 180px;
+    height: 110px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.designing-dashboards h2,
+.Vibrant-Portraits-of-2020 h2 {
+    flex: 1 1 200px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* Metadados das experiências */
+.designing-dashboards h3,
+.Vibrant-Portraits-of-2020 h3 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #697386;
+    margin: 0;
+}
+
+.designing-dashboards p,
+.Vibrant-Portraits-of-2020 p {
+    flex-basis: 100%;
+    margin-left: 200px;
+    margin-top: -5px;
+}
+
+/* ===== HABILIDADES ===== */
+.skills {
+    display: flex;
+    gap: 20px;
+    padding: 30px 10%;
+    background-color: #edf7fa;
+}
+
+.FrontEnd-skills,
+.BackEnd-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+}
+
+.FrontEnd-skills img,
+.BackEnd-skills img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.FrontEnd-skills h2,
+.BackEnd-skills h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.FrontEnd-skills p,
+.BackEnd-skills p {
+    font-size: 11px;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 35px 20px;
+    background-color: white;
+}
+
+.applicativos-rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.applicativos-rodape img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+footer p {
+    color: #697386;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* ===== TABLETS ===== */
+@media (max-width: 768px) {
+    header {
+        max-width: 100%;
+    }
+
+    .home,
+    .formacao,
+    .experiencias,
+    .skills {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .home {
+        gap: 20px;
+    }
+
+    .home-foto img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .designing-dashboards img,
+    .Vibrant-Portraits-of-2020 img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .designing-dashboards p,
+    .Vibrant-Portraits-of-2020 p {
+        margin-left: 160px;
+    }
+}
+
+/* ===== CELULARES ===== */
+@media (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+
+    header {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Apresentação vertical */
+    .home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 22px;
+    }
+
+    .home h1 {
+        font-size: 22px;
+    }
+
+    .home p {
+        font-size: 12px;
+    }
+
+    .home-foto {
+        border: none;
+        padding: 0;
+    }
+
+    .home-foto img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    /* Formação em uma coluna */
+    .formacao {
+        flex-direction: column;
+        gap: 12px;
+        padding: 22px 18px;
+    }
+
+    .formacao > h2 {
+        margin-bottom: 5px;
+    }
+
+    .markin-formacao,
+    .Creating-formacao {
+        flex: auto;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .markin-formacao h3,
+    .Creating-formacao h3 {
+        font-size: 15px;
+    }
+
+    /* Experiências em coluna */
+    .experiencias {
+        padding: 25px 18px;
+        gap: 18px;
+    }
+
+    .designing-dashboards,
+    .Vibrant-Portraits-of-2020 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding-bottom: 18px;
+    }
+
+    .designing-dashboards img,
+    .Vibrant-Portraits-of-2020 img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .designing-dashboards h2,
+    .Vibrant-Portraits-of-2020 h2 {
+        font-size: 16px;
+    }
+
+    .designing-dashboards h3,
+    .Vibrant-Portraits-of-2020 h3 {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .designing-dashboards p,
+    .Vibrant-Portraits-of-2020 p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    /* Habilidades empilhadas */
+    .skills {
+        flex-direction: column;
+        gap: 12px;
+        padding: 22px 18px;
+    }
+
+    .FrontEnd-skills,
+    .BackEnd-skills {
+        width: 100%;
+        padding: 18px;
+    }
+
+    /* Rodapé */
+    footer {
+        padding: 28px 15px;
+    }
+
+    .applicativos-rodape {
+        gap: 22px;
+    }
+}
+
+/* ===== CELULARES PEQUENOS ===== */
+@media (max-width: 360px) {
+    .home {
+        padding: 25px 15px;
+    }
+
+    .home h1 {
+        font-size: 20px;
+    }
+
+    .formacao,
+    .experiencias,
+    .skills {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
